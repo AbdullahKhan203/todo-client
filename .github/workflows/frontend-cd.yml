@@ -26,3 +26,34 @@ jobs:
 
       - name: Simulate Deployment
         run: echo "🚀 Frontend deployed successfully (simulation)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# workflow: Frontend CD Simulation
+        # Push code to GitHub
+# ↓
+# GitHub creates fresh Ubuntu VM
+# ↓
+# Download frontend code
+# ↓
+# Install Node.js
+# ↓
+# Install dependencies
+# ↓
+# Build React project (dist created)
+# ↓
+# Print success message
+# ↓
+# Destroy VM
