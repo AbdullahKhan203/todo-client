@@ -1,0 +1,37 @@
+name: Frontend CI + CD
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Get code
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Setup Node
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 3. Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. Run CI (build check)
+      - name: Build Project
+        run: npm run build
+
+      # 5. CD step (simulation)
+      - name: Deploy (Simulation)
+        run: echo "🚀 Frontend deployed successfully"
