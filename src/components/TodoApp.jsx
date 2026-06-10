@@ -61,8 +61,20 @@ export default function TodoApp() {
   };
 
   return (
-    <div style={{ maxWidth: "500px", margin: "50px auto", fontFamily: "sans-serif" }}>
-      <h2>Todo App</h2>
+    <div
+  style={{
+    maxWidth: "500px",
+    margin: "50px auto",
+    fontFamily: "sans-serif",
+    border: "1px solid #ddd",
+    borderRadius: "10px",
+    padding: "20px",
+    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+  }}
+>
+      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
+  Todo App
+</h2>
 
       {/* INPUT */}
       <div style={{ display: "flex", gap: "10px" }}>
