@@ -3,8 +3,8 @@ name: Frontend CI
 on:
   push:
     branches:
-      - main
-
+      - main      
+          
   pull_request:
     branches:
       - main
@@ -28,3 +28,38 @@ jobs:
 
       - name: Build Project
         run: npm run build
+
+
+
+
+
+
+
+
+# 1. GitHub detects push to main
+# 2. Create fresh Linux machine
+# 3. Download your code
+# 4. Install Node.js
+# 5. Install dependencies
+# 6. Build React app
+# 7. If everything works → PASS ✅
+# 8. If error → FAIL ❌
+
+
+# pipeline working as follows:
+# Start Job
+# ↓
+# Checkout Code
+# ↓
+# Setup Node
+# ↓
+# Install Dependencies
+# ↓
+# Build Project
+# ↓
+# Post steps (cleanup)
+# ↓
+# Complete Job
+# ↓
+# VM destroyed
+
