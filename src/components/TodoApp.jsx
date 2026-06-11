@@ -73,7 +73,7 @@ export default function TodoApp() {
   }}
 >
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-  My Todo App
+  Todo App
 </h2>
 
       {/* INPUT */}
